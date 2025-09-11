@@ -9,7 +9,7 @@ body {
     background-image: url(../resources/gradient-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     width: 100vw;
     display: flex;
     flex-direction: column;
