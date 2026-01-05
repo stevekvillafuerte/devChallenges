@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+
+    <title>Simple Article Listing | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      @import "modern-normalize";
+
+      :root {
+        line-height: 1.5;
+        --header:12rem;
+        --main:calc(100vh-(var(--header)));
+        --hd-size:2.25rem;
+        --head-weight:600;
+        --sml-heading:1.25rem;
+        --sml-text:0.875rem;
+        --sml-text-weight:500;
+        --sml-text-color: #4D5562;
+      }
+
+      h1, h2, h3, h4, h5, figure, p, ol, ul {
+        margin: 0;
+        font-family: poppins;
+      }
+
+      ol[role="list"], ul[role="list"] {
+        list-style: none;
+        padding-inline: 0;
+      }
+
+      h1, h2, h3, h4, h5 {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+
+      /* img {
+        display: block;
+        max-inline-size: 100%;
+      } */
+
+      .header{
+        height:var(--header);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:40px;
+      }
+
+      .header h1{
+        font-size: var(--hd-size);
+        font-weight:var(--head-weight);
+        width:50%;
+        text-align: center;
+      }
+      
+      .main{
+        height:var(--main);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:40px;
+      }
+      
+      .card{
+        display: flex;
+        align-items: center;
+        gap:50px; 
+        width:max(49%,600px)
+      }
+      .card h2{
+        font-weight:var(--head-weight);
+        font-size: var(--sml-heading);
+      }
+
+      .card p{
+        font-size: var(--sml-text);
+        font-weight: var(--sml-text-weight);
+        color:var(--sml-text-color);
+      }
+
+      .card div{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+      }
+
+      .card img{
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="header">
+      <h1>We release interesting articles about technology</h1>
+      <img src="./resources/Seperator.svg" alt="">
+    </div>
+
+    
+    <div class="main">
+      <div class="card">
+        <img src="./resources/photo_1.png" alt="">
+        <div>
+          <h2>Unlocking the Power of Cloud Computing: A Guide 
+            to Scalable Solutions</h2>
+          <p>November 12, 2024</p>
+        </div>
+
+      </div>
+
+      <div class="card">
+        <img src="./resources/photo_3.png" alt="">
+         <div>
+          <h2>The Future of AI :How Machine Learning is 
+          Revolutionizing Industries</h2>
+          <p>November 12, 2024</p>
+         </div>
+        
+      </div>
+
+      <div class="card">
+        <img src="./resources/photo_2.png" alt="">
+        <div>
+          <h2>The Impact of 5G on Business: How Faster Networks
+            are Transforming the Way We Work</h2>
+          <p>November 12,2024</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- <div class="author-info">
+      Coded by <a href="#">Your Name Here</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >. -->
+    </div>
+
+  </body>
+</html>
